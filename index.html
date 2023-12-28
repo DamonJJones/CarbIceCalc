@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carburetor Icing Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Carburetor Icing Calculator</h1>
+
+        <label for="outsideAirTempC">Outside Air Temperature (OAT) in C:</label>
+        <input type="number" id="outsideAirTempC" placeholder="Enter temperature in Celsius">
+
+        <label for="dewPointC">Dew Point Temperature (DPT) in C:</label>
+        <input type="number" id="dewPointC" placeholder="Enter dew point in Celsius">
+
+        <label for="outsideAirTempF">Outside Air Temperature (OAT) in F:</label>
+        <input type="number" id="outsideAirTempF" placeholder="Enter temperature in Fahrenheit">
+
+        <label for="dewPointF">Dew Point Temperature (DPT) in F:</label>
+        <input type="number" id="dewPointF" placeholder="Enter dew point in Fahrenheit">
+
+        <button onclick="calculateIcingRisk()">Calculate</button>
+        <button onclick="clearInputs()">Clear</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
